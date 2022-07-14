@@ -21,7 +21,7 @@ positional_unlimited(1, 2, 3, 4, 5)
 def positional_limited(a, *, b=2):
     print(a, b)
 
-positional_limited(1, 2)  # Noncompliant. Too many positional arguments
+positional_limited(1, 2, 3)  # Noncompliant. Too many positional arguments
 
 
 #############################
