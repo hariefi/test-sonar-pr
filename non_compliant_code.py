@@ -13,7 +13,7 @@ def positional_unlimited(a, b=1, *args):
 
 func(1)
 func(1, 42)
-func(1, 2, 3)  # Noncompliant. Too many positional arguments
+func(1, 2, 3, 4)  # Noncompliant. Too many positional arguments
 func()  # Noncompliant. Missing positional argument for "a"
 
 positional_unlimited(1, 2, 3, 4, 5)
