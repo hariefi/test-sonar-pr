@@ -32,7 +32,7 @@ def keywords(a=1, b=2, *, c=3):
     print(a, b, c)
 
 keywords(1)
-keywords(1, z=42)  # Noncompliant. Unexpected keyword argument "z"
+keywords(1, b=42)  # Noncompliant. Unexpected keyword argument "z"
 
 def keywords_unlimited(a=1, b=2, *, c=3, **kwargs):
     print(a, b, kwargs)
